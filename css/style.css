@@ -1,16 +1,28 @@
 
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding:0;
     position: relative;
 }
+.myscreen{
+    width: 960px;
+}
+/* 電腦版招牌茶間距 */
+.wrapper_hot{
+    margin-top: 50px;
+}
+.wrapper_no{
+    margin: 50px 0;
+}
+/* 王漢宗顏楷體 */
 .title-font{
     font-family: wt064 ;
     font-weight: 700;
     font-size: 20px;
     padding: 10px;
-}
-.font-size-20{
 }
 .font-size-40{
     font-size: 40px;
@@ -48,7 +60,12 @@ body{
     width: 100%;
 }
 .logo{
-    height: 50px;
+    position: absolute;
+    top: 0;
+    height: 1.5em;
+}
+@media screen and (max-width:992px){
+
 }
 @media screen and(min-width:992px){
     .navbar-nav{
@@ -89,7 +106,7 @@ body{
 }
 .content_hot{
     width: 100%;
-    height: 1500px;
+    height: 1100px;
     background-color: #EDD6CD;
 }
 
@@ -100,15 +117,22 @@ body{
 }
 .content_menu{
     width: 100%;
-    height: 3000px;
-    background-image: url("/img/menu/menu.jpg");
-    background-size: center;
+    height: 2260px;
+    background-color: #FAEDC1;
+    background-image: url("/img/menu/menu_pc_1366.jpg");
+    background-position: center ;
+}
+@media screen and (max-width:576px){
+    .content_menu{
+        background-image: url("/img/menu/menu_cp.jpg");
+    }
 }
 .content_story{
     width: 100%;
-    height: 500px;
     background-color: #F1BB86;
+    padding: 20px 0;
 }
+
 .content_extra{
     width: 100%;
     height: 500px;
