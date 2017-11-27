@@ -1,0 +1,123 @@
+
+body{
+    margin: 0;
+    padding:0;
+    position: relative;
+}
+.title-font{
+    font-family: wt064 ;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+}
+.font-size-20{
+}
+.font-size-40{
+    font-size: 40px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    height: 50px;
+}
+@media screen and(min-width:992px){
+    .navbar-nav{
+        width:80%;
+    }
+    .nav-item{
+        width: 20%;
+        text-align: center;
+    }
+}
+.swiper-container{
+    width: 100%;
+    height: 100vh;
+}
+.swiper-slide{
+    background-size: cover;
+}
+#play1{
+    background-image: url("/img/banner/pcplay1.jpg");
+    background-position: center;
+
+}
+#play2{
+    background-image: url("/img/banner/2.jpg");
+    background-position: center;
+}
+#play3{
+    background-image: url("/img/banner/pcplay3.jpg");
+}
+.title{
+    width: 100%;
+    height: 70px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 70px;
+    font-family: wt064;
+    font-size: 40px;
+}
+.content_hot{
+    width: 100%;
+    height: 1500px;
+    background-color: #EDD6CD;
+}
+
+.content_no{
+    width: 100%;
+    height: 500px;
+    background-color:#D1C49E;
+}
+.content_menu{
+    width: 100%;
+    height: 3000px;
+    background-image: url("/img/menu/menu.jpg");
+    background-size: center;
+}
+.content_story{
+    width: 100%;
+    height: 500px;
+    background-color: #F1BB86;
+}
+.content_extra{
+    width: 100%;
+    height: 500px;
+    background-color: #EDD6CD
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: #080304;
+}
+
+
