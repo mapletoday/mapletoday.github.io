@@ -1,42 +1,37 @@
-
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
-    padding:0;
+    padding: 0;
     position: relative;
+    overflow-x: hidden;
 }
-.myscreen{
-    width: 960px;
-}
-/* 電腦版招牌茶間距 */
-.wrapper_hot{
-    margin-top: 50px;
-}
-.wrapper_no{
-    margin: 50px 0;
-}
+
+
 /* 王漢宗顏楷體 */
-.title-font{
-    font-family: wt064 ;
+
+.title-font {
+    font-family: wt064;
     font-weight: 700;
     font-size: 20px;
     padding: 10px;
 }
-.font-size-40{
+
+.font-size-40 {
     font-size: 40px;
 }
 
 .swiper-container {
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
+
 .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -51,51 +46,57 @@ body{
     -webkit-align-items: center;
     align-items: center;
 }
-.container-fluid{
+
+.container-fluid {
     padding: 0;
     margin: 0;
 }
-.navbar{
+
+.navbar {
     position: fixed;
     width: 100%;
+    align-items: left;
 }
-.logo{
-    position: absolute;
-    top: 0;
-    height: 1.5em;
-}
-@media screen and (max-width:992px){
 
+.navbar-dark {
+    background-color: #080304 !important;
 }
-@media screen and(min-width:992px){
-    .navbar-nav{
-        width:80%;
+
+.logo {
+    height: 67px;
+}
+
+@media screen and (max-width:992px) {
+    .logo {
+        height: 50px;
     }
-    .nav-item{
+}
+
+@media screen and(min-width:992px) {
+    .navbar-nav {
+        width: 80%;
+    }
+    .nav-item {
         width: 20%;
         text-align: center;
     }
 }
-.swiper-container{
+
+.swiper-container {
+    /* clear: both; */
     width: 100%;
-    height: 100vh;
+    /* height: calc(100vh - 67px); */
 }
-.swiper-slide{
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-slide {
     background-size: cover;
 }
-#play1{
-    background-image: url("/img/banner/pcplay1.jpg");
-    background-position: center;
 
-}
-#play2{
-    background-image: url("/img/banner/2.jpg");
-    background-position: center;
-}
-#play3{
-    background-image: url("/img/banner/pcplay3.jpg");
-}
-.title{
+.title {
     width: 100%;
     height: 70px;
     border: 1px solid black;
@@ -104,44 +105,87 @@ body{
     font-family: wt064;
     font-size: 40px;
 }
-.content_hot{
+
+.content_hot {
     width: 100%;
     height: 1100px;
     background-color: #EDD6CD;
 }
 
-.content_no{
-    width: 100%;
-    height: 500px;
-    background-color:#D1C49E;
-}
-.content_menu{
-    width: 100%;
-    height: 2260px;
-    background-color: #FAEDC1;
-    background-image: url("/img/menu/menu_pc_1366.jpg");
-    background-position: center ;
-}
-@media screen and (max-width:576px){
-    .content_menu{
-        background-image: url("/img/menu/menu_cp.jpg");
+@media screen and (max-width:992px) {
+    .content_hot {
+        height: 3200px;
+    }
+    .content_no {
+        height: 5000px;
     }
 }
-.content_story{
+
+.wrapper_hot {
+    position: relative;
+}
+
+.hot_items {
+    margin-top: 50px;
+    margin-left: 110px;
+    /* position: absolute;
+    left: 50px; */
+}
+
+.content_no {
+    width: 100%;
+    height: 500px;
+    background-color: #D1C49E;
+}
+
+.wrapper_no {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.content_menu {
+    width: 100%;
+    height: 3371px;
+    background-color: #FAEDC1;
+    background-image: url("/img/menu2/menu_pc_1920.jpg");
+    background-position: center;
+}
+
+@media screen and (max-width:1366px) {
+    .content_menu {
+        height: 2260px;
+        background-image: url("/img/menu2/menu_pc_1366.jpg");
+    }
+}
+
+@media screen and (max-width:768px) {
+    .content_menu {
+        height: 1271px;
+        background-image: url("/img/menu2/menu_cp_768.jpg");
+    }
+}
+
+@media screen and (max-width:576px) {
+    .content_menu {
+        height: 3094px;
+        background-image: url("/img/menu2/menu_cp_576.jpg");
+    }
+}
+
+.content_story {
     width: 100%;
     background-color: #F1BB86;
     padding: 20px 0;
 }
 
-.content_extra{
+.content_extra {
     width: 100%;
     height: 500px;
     background-color: #EDD6CD
 }
-.footer{
+
+.footer {
     width: 100%;
     height: 300px;
     background-color: #080304;
 }
-
-
