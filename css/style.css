@@ -180,12 +180,17 @@ body {
 
 .content_extra {
     width: 100%;
-    height: 500px;
+    height: 1000px;
     background-color: #EDD6CD
+}
+
+.left {
+    float: left;
 }
 
 .footer {
     width: 100%;
     height: 300px;
     background-color: #080304;
+    color: #eee;
 }
